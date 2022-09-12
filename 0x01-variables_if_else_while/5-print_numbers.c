@@ -1,20 +1,35 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
  *
- * Return: Always 0 (Success)
+ * main - print if the number is postive, zero, or negative
+ *
+ *
+ *
+ * Description: using the main function
+ *
+ * this program prints "Programming is positive, zero, or negative
+ *
+ * Return: 0
+ *
  */
-int main(void)
-{
-	int d = 48;
 
-while (d < 58)
+int main(void)
+
 {
-	    putchar(d);
-	    d++;
+
+int i;
+
+for (i = 0; i < 10; i++)
+
+{
+
+	printf("%i", i);
+
 }
-	putchar('\n');
+
+	printf("\n");
 
 return (0);
+
 }
