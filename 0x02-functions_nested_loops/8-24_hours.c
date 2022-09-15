@@ -26,7 +26,7 @@ while (minutes <= 59)
 	_putchar(mins_remainder + '0');
 		
 	minutes++;
-	_putchar('\n');
+_putchar('\n');
 }
 	hours++;
 	minutes = 0;
