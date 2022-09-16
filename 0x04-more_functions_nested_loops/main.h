@@ -1,4 +1,4 @@
-#define MAIN_H
+#ifndef MAIN_H
 #define MAIN_H
 
 /**
@@ -6,6 +6,7 @@
  *void protoypes (void)
  *int protoypes (int)
  */
+
 
 void print_numbers(void);
 void print_most_numbers(void);
