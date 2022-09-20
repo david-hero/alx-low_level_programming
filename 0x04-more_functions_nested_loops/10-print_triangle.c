@@ -1,16 +1,34 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * add - Adds two integers.
- * @num1: The first integer to be added.
- * @num2: The second integer to be added.
- *
- * Return: The result of the addition.
+ *print_triangle - prints a triangle
+ *@size:size parameter of triangle
+ *Return: returns nothing
  */
 
-int add(int num1, int num2)
+void print_triangle(int size)
 {
+	int inc1, inc2;
+		if (size > 0)
+{
+		for (inc1 = 1; inc1 <= size; inc1++)
+{
+		for ((inc2 = size - inc1); inc2 > 0; inc2--)
+{
+			putchar(' ');
+}
+		for (inc2 = 0; inc2 < inc1; inc2++)
+{
+			putchar('#');
+}
+		if (inc1 == size)
+{
+		continue;
+}
+			putchar('\n');
+}
 
-		return (num1 + num2);
-
+}
+			putchar('\n');
 }
