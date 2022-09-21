@@ -1,41 +1,32 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- **times_table - Prints the 9 times table, starting with 0.
+ * main - function that checks for uppercase character.
+ * Return: 0
  */
 
-void times_table(void)
+int main(void)
 {
-int num, mult, prod;
-
-for (num = 0; num <= 9; num++)
+	int h = 1;
+		while (h <= 100)
 {
-
-	_putchar('0');
-
-for (mult = 1; mult <= 9; mult++)
-
+		if (h % 3 == 0 && h % 5 == 0)
+				printf("FizzBuzz ");
+		else if (h % 5 == 0)
 {
-	_putchar(',');
-
-	_putchar(' ');
-
-
-	prod = num * mult;
-
-if (prod <= 9)
-
-										
-	_putchar(' ');
-
-else
-
-	_putchar((prod / 10) + '0');
-
-	_putchar((prod % 10) + '0');
+		if (h == 100)
+{
+			printf("Buzz");
+			printf("\n");
 }
-
-_putchar('\n');
+		else
+			printf("Buzz ");
 }
-
+		else if (h % 3 == 0)
+			printf("Fizz ");
+		else
+			printf("%d ", h);
+				h++;
+}
+return (0);
 }
